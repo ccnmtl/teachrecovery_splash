@@ -1,0 +1,34 @@
+theme = "ctl-three-column"
+baseurl = "http://sdreher.ccnmtl.columbia.edu/"
+languageCode = "en-us"
+title = "Teach Recovery"
+
+[params]
+    projectcss = "site.css"
+    logo = "logo.png"
+    logo_small = "logo_small.png"
+    tagline = "tagline.png"
+
+[params.home]
+    slider = [
+        ["slide1.jpg", "OUR EDUCATIONAL MODULES ARE SELF-PACED, ENGAGING AND INFORMATIVE."],
+        ["slide2.jpg", "LEARN TO HELP PEOPLE WITH MENTAL ILLNESS LEAD A REWARDING, PRODUCTIVE LIFE."]
+    ]    
+    tagline1 = "We teach about cognition, motivation and behavioral approaches to help people with severe mental illness lead productive lives."
+    tagline2 = "TEACH RECOVERY IS A NON-PROFIT EDUCATIONAL PLATFORM PROVIDED THROUGH COLUMBIA UNIVERSITY DEPARTMENT OF PSYCHIATRY WITH GENEROUS FUNDING FROM FRANK AND PATRICIA ZARB."
+
+    columns = [
+        ["column1.jpg", "Leadership", "Teach Recovery was developed by Alice Medalia, PhD Professor at Columbia University Medical Center and Director of the Lieber Recovery and Rehabilitation Cinic."],
+        ["column2.jpg", "Mission", "To provide mental health professionals ongoing access to information so they can gain knowledge about addressing cognitive health as it relates to psychiatric recovery. Through eduation, Teach Recovery empowers the mental health professional to change lives."],
+        ["column3.jpg", "Courses", "Choose one lecture or several. Once you view the material you can test your knowledge with a competency exam."]
+    ]
+
+[params.footer]    
+    credits = [
+        ["psych", "http://columbiapsychiatry.org/", "tr_columbiapsychiatry.png"],
+        ["lieber", "http://www.lieberclinic.com/", "tr_lieber.png"],
+        ["alliance", "http://www.cognitive-remediation.org/id10.html", "tr_alliance.png"],
+        ["ccnmtl", "http://ctl.columbia.edu", "logo-new-white-horizontal-150.png"]
+    ]
+    
+    

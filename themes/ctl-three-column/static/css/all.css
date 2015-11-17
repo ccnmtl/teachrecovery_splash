@@ -1,0 +1,625 @@
+/* Teach Recovery Styles
+ * by Rachelle White
+ * rwhite@columbia.edu
+ * ccnmtl.columbia.edu
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Cinzel);
+
+body, html {
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: "Lato", "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+div, p, td, tr, table {
+    font-size: 15px;
+}
+
+a {
+    color: #499eff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: inherit;
+}
+
+
+/* Flex gridding the main container */
+
+.container {
+    background-color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+.alert {
+    clear: both;
+}
+/* Main Container */
+
+.main-container {
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -150px;
+}
+
+/* Hide h1 on user dashboard page */
+.page-user h1 {
+    display: none;
+}
+
+section.col-sm-12 {
+    clear: both;
+    margin: 10px 0 0 0;
+}
+
+/* Footer */
+
+.clearfooter {
+    height: 1px;
+    clear: both;
+}
+
+.footer {
+    position: relative;
+    background-color: #499eff;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding: 0 !important;
+    border: none;
+}
+
+.region.region-footer {
+    float: left;
+}
+
+.region-footer .block-menu ul.nav {
+    padding: 6em 0 0 2em;
+}
+
+.region-footer .block-menu ul.nav li {
+    display: inline;
+    float: left;
+}
+
+.region-footer .block-menu ul.nav li a {
+    color: #fff;
+}
+
+.region-footer .block-menu ul.nav li a:hover {
+    background-color: transparent;
+    color: #2a6496;
+}
+
+.credit {
+    float: right;
+}
+
+.credit ul li {
+
+    float: left;
+    list-style-type: none;
+}
+
+.credit ul li img {
+
+    float: left;
+}
+
+#cufooterright {
+  float: right;
+}
+
+/* Log in */
+body.page-user-login #block-system-main {
+    width: 45%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+body.page-user-login #block-system-main #user_login_form {
+    background: #fff;
+    padding: 10px;
+}
+
+body.page-user-login #block-system-main #user_login_form h1 {
+    margin: 0 0 1em 0;
+    font-size: 2em;
+    color: #333;
+}
+
+body.page-user-login #block-system-main .create-account h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.toboggan-unified #login-links {
+    display: none;
+}
+
+/* Register */
+body.page-user-register #block-system-main {
+    width: 45%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+body.page-user-register #block-system-main h1 {
+    margin: 0 0 1em 0;
+    font-size: 2em;
+    color: #333;
+}
+
+/*Front Page */
+/* Columbia Branding */
+#cubrand {
+  width: 100%;
+  height: 30px;
+  display: block;
+  float: left;
+  padding: 2px 20px 6px 20px;
+  background-color: #174785;
+}
+#cubrand img {
+  max-height: 100%;
+  padding: 0 15px 0 0;
+}
+.cutext {
+  display: inline;
+  position: relative;
+  top: 3px;
+  font-size: .875em;
+  color: #fff;
+  font-family: 'Cinzel', sans-serif;
+}
+.cutext a {
+    color: #fff;
+    font-family: 'Cinzel', Times, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .05em;
+}
+.cutext a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+@media screen and (max-width: 768px) {
+
+    #cufooterleft, #cufooterright {
+        display: block;
+        float: left;
+        clear: both;
+    }
+}
+
+
+/* Top Nav Bar */
+@media screen and (max-width: 1200px) {
+    .navbar-header img {
+        width: 175px;
+    }
+}
+
+a.logo img {
+    min-width: 100%
+}
+
+.tagline img {
+    display: inline;
+    float: left;
+    margin: 4em 0 0 1em;
+}
+
+/* Navigation Container */
+nav {
+    text-align: right;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    color: #6db1ff;
+    text-decoration: none;
+    background-color: #fff;
+    border-bottom: solid 3px #499eff;
+    /* padding-top: 0; */
+    padding-bottom: 8px;
+}
+
+.nav > li > a.active-trail.active {
+    font-weight: bold;
+}
+
+/* Main Navigation */
+
+.navbar-collapse.collapse.front > nav {
+    float: right;
+    display: inline-block;
+    margin: 6.15em 0 0 0;
+}
+
+.navbar-toggle {
+    border: solid 1px #499eff;
+    margin-top: 60px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #499eff;
+}
+
+.navbar-toggle:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.navbar-collapse.collapse.front.in > nav {
+    float: right;
+    display: inline-block;
+    margin: 0
+}
+
+#navbar > div > .search {
+    padding: 1.1em 0 0;
+}
+
+/* Slideshow */
+
+.flexslider {
+    margin: 0 0 60px;
+    background: transparent;
+    border: none;
+    position: relative;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    zoom: 1;
+}
+
+.view-id-home_page_flexslider {
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+}
+
+section#block-views-bfa4ca4b6106865f0db1341f13d9c396 {
+    background-color: #fade6e;
+    margin: 100px 0 0 0;
+    height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    section#block-views-bfa4ca4b6106865f0db1341f13d9c396 {
+        background-color: #fade6e;
+        margin: 100px 0 0 0;
+        height: 170px;
+    }
+}
+.flex-caption {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 0 0;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+    .flex-caption {
+        font-size: 80%;
+    }
+}
+
+.flex-direction-nav a {
+    height: 55px;
+}
+
+.flex-direction-nav a:hover {
+    color: #fff;
+}
+
+.flex-control-paging li a.flex-active {
+
+}
+
+/* Tag line */
+.front_tag {
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1.8em;
+    width: 75%;
+    margin: 0 auto 47px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .front_tag {
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+}
+/* Base */
+.row.base {
+    background-color: #aed4ff;
+    height: 230px;
+}
+.row.base img {
+    position: relative;
+    top: -30px;
+}
+.row.base h2 {
+    color: #fff;
+    margin-top: -20px;
+}
+.row.base p {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.row.base a {
+
+}
+/* Base */
+@media screen and (max-width: 768px) {
+    .row.base {
+        background-color: #aed4ff;
+        display: block;
+        float: left;
+        height: inherit;
+    }
+    .row.base img {
+        display: none;
+    }
+    .row.base h2 {
+        color: #fff;
+        margin-top: 0;
+    }
+    .row.base p {
+        margin-top: 0;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .row.base .col-sm-4 {
+        background-color: #aed4ff;
+        display: block;
+        clear: both;
+        margin: 20px 0;
+        font-size: 80%;
+    }
+}
+
+/* Contribution line */
+
+.contrib {
+    background-color: #faebae;
+    height: 80px;
+}
+
+.contrib p {
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.25em 0;
+    letter-spacing: .05em;
+}
+
+@media screen and (max-width: 1060px) {
+    .contrib {
+        height: 105px;
+        padding: 20px;
+    }
+    .contrib p {
+        font-size: .875em;
+    }
+}
+
+/* All Pages */
+
+.navbar-header.small > .logo.navbar-btn img {
+    width: 170px;
+}
+
+.navbar-header.small > .logo.navbar-btn {
+    margin: 0 0;
+}
+
+.navbar-header.small > .tagline.navbar-btn img {
+    display: none;
+}
+
+.navbar-collapse.collapse > nav {
+    float: right;
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+.page-logo {
+  padding: 10px 0 0 0;
+}
+/* Content */
+
+.front .node-page {
+    margin: 3em 0;
+}
+
+.front .node-page h2 {
+    display: none;
+}
+
+.front footer ul.links {
+    display: none;
+}
+
+.front .field-name-body p {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+.page-header {
+    color: #444;
+    padding-bottom: 9px;
+    border-bottom: none;
+    margin: 0 0 .5em 10px;
+    float: left;
+}
+
+ul.tabs--primary.nav.nav-tabs {
+    display:block;
+    clear:both;
+    margin: 0 0 1em 0;
+}
+
+section#block-system-main {
+    clear: both;
+}
+
+/* Shop Courses Page */
+
+.panel-pane.pane-list-courses-panel-pane-courses .node-purchasable-course{
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.node-purchasable-course .field-name-title-field {
+  padding: 0 0 1em 0;
+}
+
+.pane-list-product-pricing-levels-panel-pane-tiered-pricing {
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.pane-list-product-pricing-levels-panel-pane-tiered-pricing .view-header {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.pane-list-product-pricing-levels-panel-pane-tiered-pricing .views-row .title {
+    font-weight: bold;
+}
+
+.pane-list-product-pricing-levels-panel-pane-tiered-pricing .views-row .description {
+    display: block;
+    clear: both;
+    background-color: #fff;
+    padding: 4px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+
+.tr-add-to-cart {
+    padding: 20px 0 0 0;
+    margin: 2em 0 0 0;
+    border-top: dotted 1px #ccc;
+}
+
+.tr-add-to-cart .form-group {
+    margin: 0;
+}
+
+.tr-add-to-cart .form-submit {
+    margin: 0 2em 0 2em;
+}
+
+.tr-add-to-cart .ui-spinner-button {
+    width: 21px !important;
+}
+
+.view-mode-product_list {
+    margin: 0 0 3em 0 !important;
+}
+
+.view-mode-product_list .field-name-title-field a {
+    font-size: 1.5em;
+}
+
+.field-name-field-product-summary {
+  margin: 0 0 2em 0;
+}
+
+.ui-spinner-input {
+    margin: 0.25em 22px .25em 0.4em;
+}
+
+.add-to-cart button.btn {
+        float: right;
+}
+
+.tr-add-to-cart .btn-success.form-submit.disabled {
+  background-color: #ccc;
+  border-color: #bbb;
+}
+
+/* Individual Courses Page */
+
+.field-name-product-pricing-tiers {
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.field-name-product-pricing-tiers .view-header {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.field-name-product-pricing-tiers .views-row .title {
+    font-weight: bold;
+}
+
+.field-name-product-pricing-tiers .views-row .description {
+    display: block;
+    clear: both;
+    background-color: #fff;
+    padding: 4px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+
+.node-purchasable-course.view-mode-full .tr-add-to-cart {
+    margin-top: 1em;
+}
+
+.group-course-content h2 {
+    margin-top: 0;
+    line-height: 1.25em;
+}
+
+.group-course-content p {
+    margin: 10px 0;
+}

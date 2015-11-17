@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Post List</title>
+    </head>
+    <body>
+      {{ range first 10 .Data.Pages }}
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      {{ end }}
+  </body>
+</html>

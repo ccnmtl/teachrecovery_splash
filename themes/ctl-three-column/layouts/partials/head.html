@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+{{ .Hugo.Generator }}
+<title>{{ .Site.Title }}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+{{ if isset .Site.Params.home "slider" }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/flexslider.css">
+{{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.css">
+{{ if isset .Site.Params "projectcss" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/{{ .Site.Params.projectcss }}">
+{{ end }}
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+{{ "<![endif]-->" | safeHTML }}

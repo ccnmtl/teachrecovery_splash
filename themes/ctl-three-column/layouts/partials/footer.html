@@ -1,0 +1,42 @@
+    <div class="clearfooter"></div>
+
+    <footer class="footer container">
+        <div class="region region-footer">
+            <section id="block-menu-menu-footer-navigation" class="block block-menu clearfix">
+                <h2 class="block-title"></h2>
+                <ul class="menu nav">
+                    {{ range $section, $taxonomy := .Site.Sections }}
+                        {{ if eq $section "" }}
+                            {{ range $taxonomy.Pages }}
+                                <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </section>
+        </div>
+        
+        <div class="credit">
+            <ul>
+                {{ if isset .Site.Params.footer "credits" }}
+                    {{ range .Site.Params.footer.credits }}
+                        <li class="{{ index . 0 }}">
+                            <a href="{{ index . 1 }}" target="_blank">
+                                <img src="/images/{{ index . 2 }}">
+                            </a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </footer>
+
+    <div id="cubrand">
+        <div id="cufooterleft" class="cutext"><a href="http://www.columbia.edu/node/111.html" target="_blank">© Columbia University 2015</a></div>
+        <div id="cufooterright" class="cutext"></div>
+    </div>
+
+    {{ partial "js.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<header id="navbar" role="banner" class="container">
+
+    <div class="navbar-header small">
+        <a class="logo navbar-btn pull-left page-logo" href="/" title="Home">
+            <img src="/images/{{ .Site.Params.logo_small }}" alt="Home">
+        </a>
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+        <nav role="navigation">
+            <ul class="menu nav navbar-nav">
+                {{ range $section, $taxonomy := .Site.Sections }}
+                    {{ if eq $section "" }}
+                        {{ range $taxonomy.Pages }}
+                            <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                        {{ end }}
+                    {{ else }}
+                        <li><a href="/{{ $section }}/"> {{ $section }} </a> </li>
+                    {{ end }}
+                {{ end }}
+            </ul>                  
+        </nav>
+    </div>
+    
+</header>
