@@ -1,11 +1,11 @@
 <header id="navbar" role="banner" class="container">
     <div class="navbar-header">
         <a class="logo navbar-btn pull-left" href="/" title="Home">
-            <img src="/images/{{ .Site.Params.logo }}" alt="Home">
+            <img src="{{ $.Site.BaseURL }}images/{{ .Site.Params.logo }}" alt="Home">
         </a>
         {{ if isset .Site.Params "tagline" }}
         <a class="tagline navbar-btn pull-left" href="/">
-            <img src="/images/{{ .Site.Params.tagline }}">
+            <img src="{{ $.Site.BaseURL }}images/{{ .Site.Params.tagline }}">
         </a>
         {{ end }}
 

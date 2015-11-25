@@ -22,7 +22,7 @@
                     {{ range .Site.Params.footer.credits }}
                         <li class="{{ index . 0 }}">
                             <a href="{{ index . 1 }}" target="_blank">
-                                <img src="/images/{{ index . 2 }}">
+                                <img src="{{ $.Site.BaseURL }}images/{{ index . 2 }}">
                             </a>
                         </li>
                     {{ end }}

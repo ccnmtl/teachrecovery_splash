@@ -17,7 +17,7 @@
                                             <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                                             <div class="field-items">
                                                 <div class="field-item even">
-                                                    <p><img src="/images/{{ index . 0 }}" draggable="false"></p>
+                                                    <p><img src="{{ $.Site.BaseURL }}images/{{ index . 0 }}" draggable="false"></p>
                                                     <div class="flex-caption">{{ index . 1 }}</div>
                                                  </div>
                                              </div></div>                                    
@@ -55,7 +55,7 @@
     <div class="row base">
         {{ range .Site.Params.home.columns }}
         <div class="col-sm-4">
-             <img src="/images/{{ index . 0 }}">
+             <img src="{{ $.Site.BaseURL }}images/{{ index . 0 }}">
              <h2>{{ index . 1 }}</h2>
              <p>{{ index . 2 }}</p>
         </div>
