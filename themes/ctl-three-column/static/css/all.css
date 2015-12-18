@@ -4,7 +4,8 @@
  * ccnmtl.columbia.edu
  */
 
- @import url(http://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 body, html {
     height: 100%;
@@ -91,6 +92,11 @@ section.col-sm-12 {
     padding-left: 0px;
     padding: 0 !important;
     border: none;
+}
+
+.footer .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .region.region-footer {
@@ -308,14 +314,14 @@ nav {
     top: -80px;
 }
 
-section#block-views-bfa4ca4b6106865f0db1341f13d9c396 {
+section#slider-background {
     background-color: #fade6e;
     margin: 100px 0 0 0;
     height: 350px;
 }
 
 @media screen and (max-width: 768px) {
-    section#block-views-bfa4ca4b6106865f0db1341f13d9c396 {
+    section#slider-background {
         background-color: #fade6e;
         margin: 100px 0 0 0;
         height: 170px;
@@ -485,10 +491,10 @@ section#block-views-bfa4ca4b6106865f0db1341f13d9c396 {
 
 .page-header {
     color: #444;
+    padding-top: 40px;
     padding-bottom: 9px;
     border-bottom: none;
-    margin: 0 0 .5em 10px;
-    float: left;
+    margin: 0 0 .5em 0;
 }
 
 ul.tabs--primary.nav.nav-tabs {
@@ -622,4 +628,20 @@ section#block-system-main {
 
 .group-course-content p {
     margin: 10px 0;
+}
+
+.flex-direction-nav a.flex-next {
+   right: -10px;
+}
+
+.flex-direction-nav a.flex-prev {
+   left: -10px;
+}
+
+.tri-column {
+    margin-bottom: 40px;
+}
+
+.outer-container {
+    padding-bottom: 30px;
 }
