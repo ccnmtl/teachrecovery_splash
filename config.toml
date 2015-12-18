@@ -14,13 +14,15 @@ title = "Teach Recovery"
         ["slide1.jpg", "OUR EDUCATIONAL MODULES ARE SELF-PACED, ENGAGING AND INFORMATIVE."],
         ["slide2.jpg", "LEARN TO HELP PEOPLE WITH MENTAL ILLNESS LEAD A REWARDING, PRODUCTIVE LIFE."]
     ]    
-    tagline1 = "We teach about cognition, motivation and behavioral approaches to help people with severe mental illness lead productive lives."
-    tagline2 = "TEACH RECOVERY IS A NON-PROFIT EDUCATIONAL PLATFORM PROVIDED THROUGH COLUMBIA UNIVERSITY DEPARTMENT OF PSYCHIATRY WITH GENEROUS FUNDING FROM FRANK AND PATRICIA ZARB."
+    
+    tagline1 = "We teach about <b>cognition</b>, <b>motivation</b> and <b>behavioral approaches</b> to help people with severe mental illness lead <b>productive lives</b>."
+    
+    tagline2 = "TEACH RECOVERY IS A NON-PROFIT EDUCATIONAL PLATFORM PROVIDED THROUGH <b>COLUMBIA UNIVERSITY DEPARTMENT OF PSYCHIATRY</b> WITH GENEROUS FUNDING FROM <b>FRANK AND PATRICIA ZARB</b>."
 
     columns = [
-        ["column1.jpg", "Leadership", "Teach Recovery was developed by Alice Medalia, PhD Professor at Columbia University Medical Center and Director of the Lieber Recovery and Rehabilitation Cinic."],
-        ["column2.jpg", "Mission", "To provide mental health professionals ongoing access to information so they can gain knowledge about addressing cognitive health as it relates to psychiatric recovery. Through eduation, Teach Recovery empowers the mental health professional to change lives."],
-        ["column3.jpg", "Courses", "Choose one lecture or several. Once you view the material you can test your knowledge with a competency exam."]
+        ["column1.jpg", "Leadership", "Teach Recovery was developed by Alice Medalia, PhD Professor at Columbia University Medical Center and Director of the Lieber Recovery and Rehabilitation Clinic.", ""],
+        ["column2.jpg", "Mission", "To provide mental health professionals ongoing access to information so they can gain knowledge about addressing cognitive health as it relates to psychiatric recovery. Through eduation, Teach Recovery empowers the mental health professional to change lives.", ""],
+        ["column3.jpg", "Courses", "Choose one lecture or several. Once you view the material you can test your knowledge with a competency exam.", "courses/"]
     ]
 
 [params.footer]    
@@ -28,7 +30,8 @@ title = "Teach Recovery"
         ["psych", "http://columbiapsychiatry.org/", "tr_columbiapsychiatry.png"],
         ["lieber", "http://www.lieberclinic.com/", "tr_lieber.png"],
         ["alliance", "http://www.cognitive-remediation.org/id10.html", "tr_alliance.png"],
-        ["ccnmtl", "http://ctl.columbia.edu", "logo-new-white-horizontal-150.png"]
+        ["ccnmtl", "http://ctl.columbia.edu", "logo-ctl.png"]
     ]
-    
-    
+
+    copyrights = "© Columbia University 2015"
+    dept_address = "Columbia Psychiatry &bull; 1051 Riverside Drive New York, NY 10032 &bull; 646-774-5000"

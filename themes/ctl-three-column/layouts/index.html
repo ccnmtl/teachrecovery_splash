@@ -5,9 +5,8 @@
 <div class="main-container container front">
     <div class="content-top">
         <div class="region region-content-top">
-            <section id="block-views-bfa4ca4b6106865f0db1341f13d9c396" class="block block-views clearfix">
-                <h2 class="block-title"></h2>
-                <div class="view view-home-page-flexslider view-id-home_page_flexslider view-display-id-block_slider view-dom-id-8e39f655b62ed23d323b50017eccac5b">
+            <section id="slider-background" class="block block-views clearfix">
+                <div class="view view-home-page-flexslider view-id-home_page_flexslider view-display-id-block_slider">
                     <div class="view-content">
                         {{ if isset .Site.Params.home "slider" }}
                             <div class="flexslider">
@@ -20,7 +19,8 @@
                                                     <p><img src="{{ $.Site.BaseURL }}images/{{ index . 0 }}" draggable="false"></p>
                                                     <div class="flex-caption">{{ index . 1 }}</div>
                                                  </div>
-                                             </div></div>                                    
+                                             </div>
+                                             </div>                                    
                                         </li>
                                     {{ end }}
                                 </ul>
@@ -39,36 +39,30 @@
             <article class="node node-page clearfix">
                 <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                     <div class="field-items">
+                        {{ if isset .Site.Params.home "tagline1" }}
                         <div class="field-item even">
-                            {{ if isset .Site.Params.home "tagline1" }}
                                 <div class="front_tag">
-                                    {{ .Site.Params.home.tagline1 }}
+                                    {{ .Site.Params.home.tagline1 | safeHTML }}
                                 </div>
-                            {{ end }}
                         </div>
+                        {{ end }}
                     </div>
                 </div>
             </article>
         </section>
     </div>
 
-    <div class="row base">
+    <div class="row base clearfix">
         {{ range .Site.Params.home.columns }}
-        <div class="col-sm-4">
+        <div class="col-sm-4 tri-column">
              <img src="{{ $.Site.BaseURL }}images/{{ index . 0 }}">
              <h2>{{ index . 1 }}</h2>
              <p>{{ index . 2 }}</p>
+             {{ if index . 3 }}<p><a href="{{ $.Site.BaseURL }}/{{ index . 3 }}">Learn more</a></p>{{ end }}
         </div>
         {{ end }}
     </div>
     
-    {{ if isset .Site.Params.home "tagline2" }}
-        <div class="row">
-            <div class="contrib col-sm-12">
-                <p>{{ .Site.Params.home.tagline2 }}</p>
-            </div>
-        </div>
-    {{ end }}
 </div>
 
 
