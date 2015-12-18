@@ -5,7 +5,7 @@ runserver:
 deploy-kodos:
 	rm -rf public/*
 	/usr/local/bin/hugo -s . -b 'http://kodos.ccnmtl.columbia.edu:88/sb/common/teachrecovery_splash/public/' 
-	rsync -a public/* kodos.ccnmtl.columbia.edu:/usr/local/share/sandboxes/common/teachrecovery_splash/public/
+	rsync -a public/* pusher@kodos.ccnmtl.columbia.edu:/usr/local/share/sandboxes/common/teachrecovery_splash/public/
 
 deploy-cunix:
 	rm -rf public/*
