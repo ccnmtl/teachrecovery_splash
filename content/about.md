@@ -83,8 +83,9 @@ For more information, please contact <a href="mailto:info-teachrecovery@columbia
 **Project Director**  
 Alice Medalia
 
-**Writer**  
-Enid Gertmenian-King
+**Writers**  
+Enid Gertmenian-King  
+Alice Saperstein
 
 **Consultants**  
 Enid Gertmenian-King  
