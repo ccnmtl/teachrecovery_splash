@@ -17,3 +17,8 @@ li.alliance img {
   max-width: 200px;
     margin: 5.5em 2em 0 0;
 }
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
