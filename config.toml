@@ -21,7 +21,7 @@ title = "Teach Recovery"
 
     columns = [
         ["column1.jpg", "Leadership", "Teach Recovery was developed by Alice Medalia, PhD Professor at Columbia University Medical Center and Director of the Lieber Recovery and Rehabilitation Clinic.", ""],
-        ["column2.jpg", "Mission", "To provide mental health professionals ongoing access to information so they can gain knowledge about addressing cognitive health as it relates to psychiatric recovery. Through eduation, Teach Recovery empowers the mental health professional to change lives.", ""],
+        ["column2.jpg", "Mission", "To provide mental health professionals ongoing access to information so they can gain knowledge about addressing cognitive health as it relates to psychiatric recovery. Through education, Teach Recovery empowers the mental health professional to change lives.", ""],
         ["column3.jpg", "Courses", "Choose one lecture or several. Once you view the material you can test your knowledge with a competency exam.", "courses/"]
     ]
 
